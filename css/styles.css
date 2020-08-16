@@ -150,6 +150,19 @@ header {
   filter: drop-shadow(15px 20px 10px var(--shadowColor));
   border-radius: 16px 16px 16px 16px;
 }
+.contact{
+  background-color:var(--borderColor);
+  border-radius:10px;
+  color:var(--secondaryFontColor);
+  width: 100px;
+  text-align: center;
+  display: block;
+  margin:0 auto;
+  margin-top:15px;
+}
+.contact:hover{
+  border:1px solid var(--themeBorder);
+}
 
 .rightColumn {
   grid-area: rightColumn;
@@ -249,3 +262,31 @@ header {
   }
 } 
 
+/* Section two */
+
+.aboutWrapper{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.mePara{
+  background-color: var(--primaryColor);
+  border-radius: 10px;
+  margin:15px 0px;
+}
+.mePara p{
+  margin-left:10px ;
+}
+
+.topExpertise{
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--primaryColor);
+  border-radius: 15px;
+  margin:15px 0px;
+}
+
+.badges{
+  display: flex;
+}
