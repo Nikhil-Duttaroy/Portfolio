@@ -1,0 +1,251 @@
+:root {
+  --primaryColor: #264653;
+  --secondaryColor: #2a5263;
+  --fontColor: #eb5757;
+  --borderColor: #eb5757;
+  --secondaryFontColor: #000000;
+  --themeBorder: #ffffff;
+  --overlayColor: rgba(235, 87, 87, 0.73);
+  --shadowColor: rgba(235, 87, 87, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#light {
+  background-color: #cabfbf;
+}
+#pink {
+  background-color: #eb5757;
+}
+#dark {
+  background-color: #413d3d;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--fontColor);
+  /* font-size:24px; */
+  width: 100%;
+  height: 100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--fontColor);
+}
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 21px;
+}
+h5 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 16px;
+}
+
+.S1 {
+  background-color: var(--primaryColor);
+  width: 100%;
+  /* height: 100vh; */
+  border-bottom: 2px solid var(--borderColor);
+  overflow: auto;
+}
+
+.S2 {
+  background-color: var(--secondaryColor);
+  width: 100%;
+  border-bottom: 1px solid var(--borderColor);
+  overflow: auto;
+}
+header {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.logo {
+  width: 13rem;
+}
+.mainContainer {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+
+
+.container {
+  /* padding: 2rem; */
+  background-color: var(--secondaryColor);
+  border: 2px solid var(--borderColor);
+  border-bottom: 0px;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: -1px 1px 3px 2px var(--shadowColor);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "navWrapper navWrapper"
+    "leftColumn rightColumn";
+}
+.navWrapper {
+  grid-area: navWrapper;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.themeDiv {
+  display: flex;
+  padding: 1rem;
+}
+.theme {
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--themeBorder);
+  height: 20px;
+  width: 20px;
+}
+.theme:hover{
+  border-width:5px;
+  cursor: pointer;
+}
+#light:hover {
+  border-color: #cabfbf;
+}
+#pink:hover {
+  border-color: #eb5757;
+}
+#dark:hover {
+  border-color:  #413d3d;
+}
+#navigation {
+  display: flex;
+  margin-right: 15px;
+}
+
+.leftColumn {
+  grid-area: leftColumn;
+  padding-top: 50px;
+  padding-bottom:50px ;
+}
+
+#profile {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid var(--shadowColor);
+  filter: drop-shadow(15px 20px 10px var(--shadowColor));
+  border-radius: 16px 16px 16px 16px;
+}
+
+.rightColumn {
+  grid-area: rightColumn;
+  display: grid;
+  /* align-content:center; */
+  padding-top: 50px;
+  padding-bottom:50px ;
+  /* justify-content: center; */
+}
+.preview{
+  width:300px;
+  padding:50px;
+  font-family: 'Pangolin', cursive;
+  position: relative;
+}
+
+
+.overlays{
+  font-weight: normal;
+  font-family: Shadows Into Light Two;
+  /* border-left:3px solid var(--borderColor);
+  border-bottom:3px solid var(--borderColor); */
+  /* box-shadow:-15px 5px 10px  rgba(235, 87, 87, 0.3); */
+  width:max-content;
+  display: block;
+  margin: 15px;
+  position: absolute;
+  color:var(--secondaryFontColor);
+  height:70%;
+  background-color: var(--overlayColor);
+  padding: 10px;
+}
+#overlay1{
+  padding-left:20px;
+  top:-15px;
+  left:-5px
+}
+#overlay2{
+  padding-left:20px;
+  top:20px;
+  left:30px;
+}
+#overlay3{
+  padding-left:20px;
+  top:60px;
+  left:70px
+}
+
+
+@media screen and (max-width: 1150px) {
+  .mainContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "navWrapper"
+      "leftColumn"
+      "rightColumn";
+  }
+  .rightColumn{
+    justify-content: center;
+  }
+  .overlays{
+    font-weight: normal;
+    font-family: Shadows Into Light Two;
+    border-left:3px solid var(--borderColor);
+    border-bottom:3px solid var(--borderColor); 
+    box-shadow:-15px 5px 10px  rgba(235, 87, 87, 0.3);
+    width:max-content;
+    display: block;
+    /* margin: 15px; */
+    position: absolute;
+    color:var(--secondaryFontColor);
+    padding:0px;
+    background-color: var(--secondaryColor);
+    height:inherit;
+  }
+  #overlay1{
+    padding-left:20px;
+    top:-15px;
+    left:-5px
+  }
+  #overlay2{
+    padding-left:20px;
+    top:20px;
+    left:30px;
+  }
+  #overlay3{
+    padding-left:20px;
+    top:60px;
+    left:70px
+  }
+} 
+
