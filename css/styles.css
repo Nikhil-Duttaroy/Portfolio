@@ -1,6 +1,8 @@
 :root {
-  --primaryColor: #264653;
-  --secondaryColor: #2a5263;
+  /* --primaryColor: #264653; */
+  --primaryColor:#17223b;
+  /* --secondaryColor: #2a5263; */
+  --secondaryColor:#172e61;
   --fontColor: #eb5757;
   --borderColor: #eb5757;
   --secondaryFontColor: #000000;
@@ -212,9 +214,9 @@ header {
 }
 
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1366px) {
   .mainContainer {
-    width: 90%;
+    width:90%;
   }
 }
 
@@ -287,6 +289,14 @@ header {
   margin:15px 0px;
 }
 
+@media screen and (max-width: 800px) {
+
+  .topExpertise{
+  display : block;
+  padding: 15px;
+
+}
+}
 .badges{
   display: flex;
 }
