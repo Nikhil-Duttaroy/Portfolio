@@ -132,6 +132,11 @@ header {
 #navigation {
   display: flex;
   margin-right: 15px;
+  padding: 5px;
+}
+#navigation:hover{
+  border:2px solid var(--secondaryFontColor);
+  border-radius: 5px;
 }
 
 .leftColumn {
@@ -298,7 +303,12 @@ header {
 .SL{
       padding:5px; 
 }
-
+.linkedinsmall,.fiverrsmall{
+  display: none;
+}
+.no{
+  display: none;
+}
 
 
 
@@ -315,13 +325,50 @@ header {
   .topExpertise {
     display: block;
     padding: 15px;
+    text-align: inherit;
+  
   }
   .badges {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  
+  .socialLinks{
+    display:none;
+  }
+  .no{
+    display: block;
+  }
+  .aboutWrapper{
+    display: flex;
+    justify-content: center;
+    flex-basis: 500px;
+  }
+  .aboutMe{
+    width:80%;
+  }
 }
 
 
+.Projects{
+  display: flex;
+  justify-content: space-evenly;
+}
+.cards{
+  width: 200px;
+  height: 350px;
+  background-color: var(--secondaryColor);
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius:15px
+}
+
+@media screen and (max-width: 800px) {
+  .Projects{
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}
