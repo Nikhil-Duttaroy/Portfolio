@@ -1,0 +1,11 @@
+:root{
+    --primaryColor: #111111;
+  /* --secondaryColor: #2a5263; */
+  --secondaryColor: #464646;
+  --fontColor: #FFFFFF;
+  --borderColor: #FFFFFF;
+  --secondaryFontColor: #000000;
+  --themeBorder: # FFFFFF;
+  --overlayColor:rgba(209, 209, 209, 0.73)  ;
+  --shadowColor:rgba(255, 255, 255, 0.3);  
+}
