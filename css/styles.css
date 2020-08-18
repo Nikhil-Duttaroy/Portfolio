@@ -109,14 +109,14 @@ header {
   display: flex;
   padding: 1rem;
 }
-.theme {
+.themeD {
   margin-left: 10px;
   border-radius: 50%;
   border: 2px solid var(--themeBorder);
   height: 20px;
   width: 20px;
 }
-.theme:hover {
+.themeD:hover {
   border-width: 5px;
   cursor: pointer;
 }
@@ -364,11 +364,11 @@ header {
   border-radius:15px
 }
 
+
 @media screen and (max-width: 800px) {
   .Projects{
     flex-direction: column;
     align-items: center;
   }
-
 
 }
