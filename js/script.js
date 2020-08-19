@@ -12,7 +12,7 @@ let themeDots = document.getElementsByClassName('themeD')
 for (var i=0; themeDots.length > i; i++){
 	themeDots[i].addEventListener('click', function(){
 		let mode = this.dataset.mode
-		console.log('Option clicked:', mode)
+		console.log("chal raha hai");
 		setTheme(mode)
 	})
 }
@@ -33,3 +33,31 @@ function setTheme(mode){
 
 	localStorage.setItem('theme', mode)
 }
+
+
+
+gsap.from('#overlay1', {
+	duration: 1.5,
+	x: '50%',
+	opacity: 0,
+	ease: 'fade',
+  })
+
+  gsap.from('#overlay2', {
+	duration: 1.5,
+	delay:1.5,
+	y:'-15px',
+	x: '-5px',
+	opacity: 0,
+	ease: 'slow',
+  })  
+  gsap.from('#overlay3', {
+	duration: 1.5,
+	delay:3,
+	y:'-15px',
+	x: '-5px',
+	opacity: 0,
+	ease: 'slow',
+  }) 
+  
+  
