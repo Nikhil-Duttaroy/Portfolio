@@ -152,7 +152,7 @@ header {
   height: 250px;
   object-fit: cover;
   border: 2px solid var(--shadowColor);
-  filter: drop-shadow(15px 20px 10px var(--shadowColor));
+  filter: drop-shadow(-5px 5px 20px var(--shadowColor));
   border-radius: 16px 16px 16px 16px;
 }
 .contact {
@@ -238,12 +238,12 @@ header {
     font-family: Shadows Into Light Two;
     border-left: 3px solid var(--borderColor);
     border-bottom: 3px solid var(--borderColor);
-    box-shadow: -15px 5px 10px rgba(235, 87, 87, 0.3);
+    box-shadow: -5px 3px 5px var(--overlayColor);
     width: max-content;
     display: block;
     /* margin: 15px; */
     position: absolute;
-    color: var(--secondaryFontColor);
+    color: #000000;
     padding: 0px;
     background-color: var(--secondaryColor);
     height: inherit;
