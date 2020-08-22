@@ -22,7 +22,7 @@
     />
   </head>
   <body>
-    <section class="S1">
+    <section class="S1 first">
       <div class="mainContainer">
         <header><img src="images/Logo.svg" alt="Logo" class="logo" /></header>
         <div class="container">
@@ -58,7 +58,7 @@
             <nav>
               <ul id="navigation">
                 <li>
-                  <a href="#">Projects</a>
+                  <a href="#third">Projects</a>
                 </li>
               </ul>
             </nav>
@@ -66,7 +66,7 @@
           <div class="leftColumn">
             <div class="imageContainer">
               <img src="images/profile.jpeg" alt="Profile Image" id="profile" />
-              <a href="#" class="contact">Contact Me</a>
+              <a href="#" class="contact button">Contact Me</a>
             </div>
           </div>
           <div class="rightColumn">
@@ -86,7 +86,7 @@
       </div>
     </section>
 
-    <section class="S2">
+    <section class="S2 second" >
       <div class="mainContainer">
         <div class="aboutWrapper">
           <div class="aboutMe">
@@ -176,7 +176,7 @@
       </div>
     </section>
 
-    <section class="S1">
+    <section class="S1 third" id="third">
       <div class="mainContainer">
         <h3 style="text-align: center;">Projects</h3>
         <div class="Projects">
@@ -200,19 +200,41 @@
     </section>
     
     
-    <section class="S2">
+    <section class="S2 fourth">
       <div class="mainContainer">
         <div class="promo">
         <h3>Want a Front End Developer To make ur Website Awesome?</h3>
-        <a href="#" class="button"><h4>Contact Me</h4></a>
-
+        <a href="#" class="button sb"><h4>Contact Me</h4></a>
       </div>
       </div>
-
-
-
-
     </section>
+
+    <div class="modal">
+      
+      <form id="contact-form" method="POST" action="MAILTO:'nsdr2000@gmai.com'" enctype="text/plain">
+        <i class="fas fa-times fa-1x close"></i>
+        <h2 style="text-align: center;">Get in Touch</h2>
+        
+				<label>Name</label>
+				<input required class="input-field" type="text" name="name">
+
+				<label>Subject</label>
+				<input required class="input-field" type="text" name="subject">
+
+				<label>Email</label>
+				<input required class="input-field" type="text" name="email">
+
+				<label>Message</label>
+				<textarea required class="input-field" name="message"></textarea>
+
+				<input id="submit-btn" type="submit" value="Send">
+			</form>
+    </div>
+
+  
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
     <script src="js/script.js" defer></script>
   </body>
