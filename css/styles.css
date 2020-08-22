@@ -448,7 +448,19 @@ header {
   .click-here{
     display: none;
   }
+}
 
+@media screen and (max-width:600px){
+
+  .modal{  
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    margin:0 auto;
+    z-index: 1;
+  }
 }
 
 .modal{  
