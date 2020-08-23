@@ -88,8 +88,8 @@ function blurStyle() {
   gsap.from(".modal", {
     opacity: 0,
     yPercent: -100,
-    xPercent: 100,
-    rotate: 256,
+    // xPercent: 100,
+    // rotate: 256,
     duration: 2,
     ease: "back(3)",
   });
