@@ -211,7 +211,7 @@
 
     <div class="modal">
       
-      <form id="contact-form" method="POST" action="MAILTO:'nsdr2000@gmai.com'" enctype="text/plain">
+      <form id="contact-form" method="POST" action="" name="ContactForm" enctype="text/plain" data-netlify="true" data-netlify-recaptcha="true"  netlify-honeypot="bot-field">
         <i class="fas fa-times fa-1x close"></i>
         <h2 style="text-align: center;">Get in Touch</h2>
         
@@ -226,7 +226,10 @@
 
 				<label>Message</label>
 				<textarea required class="input-field" name="message"></textarea>
-
+        <p class="hidden" style="visibility:hidden;height: 0.5;">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
+        <div data-netlify-recaptcha="true"></div>
 				<input id="submit-btn" type="submit" value="Send">
 			</form>
     </div>
