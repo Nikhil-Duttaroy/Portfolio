@@ -469,8 +469,9 @@ header {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  margin:0   auto;
   z-index: 1;
+  margin-top:20px
+  
 }
 
 #contact-form{
