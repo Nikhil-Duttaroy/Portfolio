@@ -56,55 +56,44 @@ gsap.from("#overlay3", {
   ease: "slow",
 });
 
-const contact = document.querySelector(".button");
-const contact1 = document.querySelector(".sb");
+
+const contact = document.querySelectorAll(".button");
 const modal = document.querySelector(".modal");
 const close = document.querySelector(".close");
-const first = document.querySelector(".first");
-const second = document.querySelector(".second");
-const third = document.querySelector(".third");
-const fourth = document.querySelector(".fourth");
+const contain = document.querySelectorAll(".mainContainer");
 
+contact.forEach((contact) => {
+  contact.addEventListener("click",()=>{
+    blurStyle()
+  })
+});
 
-contact.addEventListener("click", () => {
-	modal.style.display = "block";
-	first.classList.add("isBlur");
-	second.classList.add("isBlur");
-	third.classList.add("isBlur");
-	fourth.classList.add("isBlur");
-	gsap.from(".modal",{
-		opacity:0,
-		yPercent:-100,
-		xPercent:100,
-		rotate:256,
-		duration:2,
-		ease:"back(3)",
-	})
-}
-)
-contact1.addEventListener("click", () => {
-	modal.style.display = "block";
-	first.classList.add("isBlur");
-	second.classList.add("isBlur");
-	third.classList.add("isBlur");
-	fourth.classList.add("isBlur");
-	gsap.from(".modal",{
-		opacity:0,
-		yPercent:100,
-		xPercent:-100,
-		rotate:256,
-		duration:2,
-		ease:"back(3)",
-	})
-}
-)
-
-
-close.addEventListener("click", () =>{
+close.addEventListener("click",()=>{
   modal.style.display = "none";
-  first.classList.remove("isBlur");
-  second.classList.remove("isBlur");
-  third.classList.remove("isBlur");
-  fourth.classList.remove("isBlur");
-	
+  
+  contain.forEach((contain)=>{
+    contain.classList.remove("isBlur"); 
+  })
+  
 })
+
+
+
+function blurStyle() {
+  modal.style.display = "block";
+  contain.forEach((contain) => {
+    console.log(contain);
+    contain.classList.add("isBlur");
+  });
+  gsap.from(".modal", {
+    opacity: 0,
+    yPercent: -100,
+    xPercent: 100,
+    rotate: 256,
+    duration: 2,
+    ease: "back(3)",
+  });
+}
+
+
+
