@@ -18,13 +18,113 @@
 }
 #light {
   background-color: #cabfbf;
+  -webkit-animation: glowingLight 1300ms infinite;
+  -moz-animation: glowingLight 1300ms infinite;
+  -o-animation: glowingLight 1300ms infinite;
+  animation: glowingLight 1300ms infinite;
 }
 #pink {
   background-color: #eb5757;
+  -webkit-animation: glowingPink 1300ms infinite;
+  -moz-animation: glowingPink 1300ms infinite;
+  -o-animation: glowingPink 1300ms infinite;
+  animation: glowingPink 1300ms infinite;
 }
 #dark {
   background-color: #413d3d;
+  -webkit-animation: glowingDark 1300ms infinite;
+  -moz-animation: glowingDark 1300ms infinite;
+  -o-animation: glowingDark 1300ms infinite;
+  animation: glowingDark 1300ms infinite;
 }
+
+@-webkit-keyframes glowingPink {
+  0% {
+    background-color: #eb5757;
+    -webkit-box-shadow: 0 0 3px #eb5757;
+  }
+  50% {
+    background-color: #f0b0b0;
+    -webkit-box-shadow: 0 0 15px#f0b0b0;
+  }
+  100% {
+    background-color: #eb5757;
+    -webkit-box-shadow: 0 0 3px #eb5757;;
+  }
+}
+@keyframes glowingPink {
+  0% {
+    background-color: #eb5757;
+    -webkit-box-shadow: 0 0 3px #eb5757;
+  }
+  50% {
+    background-color: #f0b0b0;
+    -webkit-box-shadow: 0 0 15px#f0b0b0;
+  }
+  100% {
+    background-color: #eb5757;
+    -webkit-box-shadow: 0 0 3px #eb5757;;
+  }
+}
+
+@-webkit-keyframes glowingLight {
+  0% {
+    background-color: #cabfbf;
+    -webkit-box-shadow: 0 0 3px #cabfbf;
+  }
+  50% {
+    background-color: #f0b0b0;
+    -webkit-box-shadow: 0 0 15px#f0b0b0;
+  }
+  100% {
+    background-color: #cabfbf;
+    -webkit-box-shadow: 0 0 3px #cabfbf;;
+  }
+}
+@keyframes glowingLight {
+  0% {
+    background-color: #cabfbf;
+    -webkit-box-shadow: 0 0 3px #cabfbf;
+  }
+  50% {
+    background-color: #f0b0b0;
+    -webkit-box-shadow: 0 0 15px#f0b0b0;
+  }
+  100% {
+    background-color: #cabfbf;
+    -webkit-box-shadow: 0 0 3px #cabfbf;;
+  }
+}
+
+@-webkit-keyframes glowingDark {
+  0% {
+    background-color: #413d3d;
+    -webkit-box-shadow: 0 0 3px #413d3d;
+  }
+  50% {
+    background-color: #f0b0b0;
+    -webkit-box-shadow: 0 0 15px #f0b0b0;
+  }
+  100% {
+    background-color: #413d3d;
+    -webkit-box-shadow: 0 0 3px #413d3d;
+  }
+}
+@keyframes glowingDark {
+  0% {
+    background-color: #413d3d;
+    -webkit-box-shadow: 0 0 3px #413d3d;
+  }
+  50% {
+    background-color: #f0b0b0; 
+    -webkit-box-shadow: 0 0 15px #f0b0b0;
+  }
+  100% {
+    background-color: #413d3d;
+    -webkit-box-shadow: 0 0 3px #413d3d;
+  }
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--fontColor);
@@ -115,11 +215,14 @@ header {
   border: 2px solid var(--themeBorder);
   height: 20px;
   width: 20px;
+  
 }
 .themeD:hover {
   border-width: 5px;
   cursor: pointer;
 }
+  
+
 #light:hover {
   border-color: #cabfbf;
 }
@@ -435,20 +538,6 @@ header {
   }
 }
 
-
-.click-here {
-  width: 100px;
-  right: 1.5em;
-  position: absolute;
-  top: 4em;
-  left:3em;
-}
-
-@media screen and (max-width: 800px) {
-  .click-here{
-    display: none;
-  }
-}
 
 @media screen and (max-width:600px){
 
