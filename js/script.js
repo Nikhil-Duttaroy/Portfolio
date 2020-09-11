@@ -1,7 +1,7 @@
 let theme = localStorage.getItem("theme");
 
 if (theme == null) {
-  setTheme("pink");
+  setTheme("dark");
 } else {
   setTheme(theme);
 }
@@ -22,11 +22,11 @@ function setTheme(mode) {
   }
 
   if (mode == "pink") {
-    document.getElementById("theme-style").href = "css/styles.css";
+    document.getElementById("theme-style").href = "css/pink.css";
   }
 
   if (mode == "dark") {
-    document.getElementById("theme-style").href = "css/dark.css";
+    document.getElementById("theme-style").href = "css/styles.css";
   }
 
   localStorage.setItem("theme", mode);
