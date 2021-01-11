@@ -1,5 +1,5 @@
 let theme = localStorage.getItem("theme");
-
+console.log(typeof(42));
 if (theme == null) {
   setTheme("dark");
 } else {
@@ -31,6 +31,13 @@ function setTheme(mode) {
 
   localStorage.setItem("theme", mode);
 }
+
+gsap.from('body',{
+  duration:2,
+  // y: "0%",
+  opacity: 0,
+  ease: "fade",
+});
 
 gsap.from("#overlay1", {
   duration: 1.5,
