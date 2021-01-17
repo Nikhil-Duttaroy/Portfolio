@@ -18,83 +18,15 @@
 }
 #light {
   background-color: #cabfbf;
-  -webkit-animation: glowingLight 1300ms infinite;
-  -moz-animation: glowingLight 1300ms infinite;
-  -o-animation: glowingLight 1300ms infinite;
-  animation: glowingLight 1300ms infinite;
 }
 #pink {
   background-color: #eb5757;
-  -webkit-animation: glowingPink 1300ms infinite;
-  -moz-animation: glowingPink 1300ms infinite;
-  -o-animation: glowingPink 1300ms infinite;
-  animation: glowingPink 1300ms infinite;
 }
 #dark {
-  background-color: #413d3d;
-  -webkit-animation: glowingDark 1300ms infinite;
-  -moz-animation: glowingDark 1300ms infinite;
-  -o-animation: glowingDark 1300ms infinite;
-  animation: glowingDark 1300ms infinite;
+  background-color: #413d3d; 
 }
 
-@-webkit-keyframes glowingPink {
-  0% {
-    background-color: #eb5757;
-    -webkit-box-shadow: 0 0 3px #eb5757;
-  }
-  50% {
-    background-color: #f0b0b0;
-    -webkit-box-shadow: 0 0 5px#f0b0b0;
-  }
-  100% {
-    background-color: #eb5757;
-    -webkit-box-shadow: 0 0 3px #eb5757;;
-  }
-}
-@keyframes glowingPink {
-  0% {
-    background-color: #eb5757;
-    -webkit-box-shadow: 0 0 3px #eb5757;
-  }
-  50% {
-    background-color: #f0b0b0;
-    -webkit-box-shadow: 0 0 5px#f0b0b0;
-  }
-  100% {
-    background-color: #eb5757;
-    -webkit-box-shadow: 0 0 3px #eb5757;;
-  }
-}
 
-@-webkit-keyframes glowingLight {
-  0% {
-    background-color: #cabfbf;
-    -webkit-box-shadow: 0 0 3px #cabfbf;
-  }
-  50% {
-    background-color: #f0b0b0;
-    -webkit-box-shadow: 0 0 5px#f0b0b0;
-  }
-  100% {
-    background-color: #cabfbf;
-    -webkit-box-shadow: 0 0 3px #cabfbf;;
-  }
-}
-@keyframes glowingLight {
-  0% {
-    background-color: #cabfbf;
-    -webkit-box-shadow: 0 0 3px #cabfbf;
-  }
-  50% {
-    background-color: #f0b0b0;
-    -webkit-box-shadow: 0 0 5px#f0b0b0;
-  }
-  100% {
-    background-color: #cabfbf;
-    -webkit-box-shadow: 0 0 3px #cabfbf;;
-  }
-}
 
 @-webkit-keyframes glowingDark {
   0% {
@@ -488,11 +420,12 @@ header {
 
 }
 
-.promo{
+.promo,.joke{
   text-align: center;
   margin-top:20px;
   padding: 10px;
 }
+
 .button {
   margin-top: 20px;
   border: 1px transparent;
@@ -511,6 +444,22 @@ header {
   -moz-animation: glowing 1300ms infinite;
   -o-animation: glowing 1300ms infinite;
   animation: glowing 1300ms infinite;
+}
+.button1 {
+  margin-top: 5px;
+  border: 1px transparent;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  color: var(--fontColor);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 1.2rem;
+  padding: 2px 10px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 5px;
+  background-color: #21c7ed;
 }
 
 @-webkit-keyframes glowing {
