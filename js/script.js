@@ -1,5 +1,4 @@
 let theme = localStorage.getItem("theme");
-console.log(typeof(42));
 if (theme == null) {
   setTheme("dark");
 } else {
@@ -102,5 +101,34 @@ function blurStyle() {
   });
 }
 
+
+
+
+
+
+//   const joke=document.querySelector(".joketxt");
+//   const getJoke=document.querySelector(".button1");
+//   getJoke.addEventListener("click",()=>{
+//      fetch("https://api.chucknorris.io/jokes/random", {
+// 	"method": "GET",
+// 	"headers": {
+// 		"x-rapidapi-host": "matchilling-chuck-norris-jokes-v1.p.rapidapi.com",
+// 		"x-rapidapi-key": "SIGN-UP-FOR-KEY",
+// 		"accept": "application/json"
+// 	}
+// })
+
+// .then(response => {
+//   return response.json();
+// })
+// .then(data => {
+//   alert(data.value);
+// })
+
+// .catch(err => {
+// 	console.log(err);
+// });
+
+//   })
 
 
