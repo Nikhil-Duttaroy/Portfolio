@@ -1,4 +1,3 @@
-
 :root{
   --primaryColor: #111111;
 /* --secondaryColor: #2a5263; */
@@ -24,37 +23,6 @@
 }
 #dark {
   background-color: #413d3d; 
-}
-
-
-
-@-webkit-keyframes glowingDark {
-  0% {
-    background-color: #413d3d;
-    -webkit-box-shadow: 0 0 3px #413d3d;
-  }
-  50% {
-    background-color: #f0b0b0;
-    -webkit-box-shadow: 0 0 5px #f0b0b0;
-  }
-  100% {
-    background-color: #413d3d;
-    -webkit-box-shadow: 0 0 3px #413d3d;
-  }
-}
-@keyframes glowingDark {
-  0% {
-    background-color: #413d3d;
-    -webkit-box-shadow: 0 0 3px #413d3d;
-  }
-  50% {
-    background-color: #f0b0b0; 
-    -webkit-box-shadow: 0 0 5px #f0b0b0;
-  }
-  100% {
-    background-color: #413d3d;
-    -webkit-box-shadow: 0 0 3px #413d3d;
-  }
 }
 
 body {
@@ -132,7 +100,6 @@ header {
 }
 .navWrapper {
   grid-area: navWrapper;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -193,7 +160,6 @@ header {
   border-radius: 16px 16px 16px 16px;
 }
 
-
 .rightColumn {
   grid-area: rightColumn;
   display: grid;
@@ -212,9 +178,6 @@ header {
 .overlays {
   font-weight: normal;
   font-family: Shadows Into Light Two;
-  /* border-left:3px solid var(--borderColor);
-  border-bottom:3px solid var(--borderColor); */
-  /* box-shadow:-15px 5px 10px  rgba(235, 87, 87, 0.3); */
   width: max-content;
   display: block;
   margin: 15px;
@@ -476,21 +439,6 @@ header {
     -webkit-box-shadow: 0 0 3px #0091b2;
   }
 }
-@keyframes glowing {
-  0% {
-    background-color: #0091b2;
-    box-shadow: 0 0 3px #0091b2;
-  }
-  50% {
-    background-color: #21c7ed;
-    box-shadow: 0 0 15px #21c7ed;
-  }
-  100% {
-    background-color: #0091b2;
-    box-shadow: 0 0 3px #0091b2;
-  }
-}
-
 
 @media screen and (max-width:600px){
 
