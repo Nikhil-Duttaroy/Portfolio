@@ -33,7 +33,6 @@ function setTheme(mode) {
 
 gsap.from('body',{
   duration:2,
-  // y: "0%",
   opacity: 0,
   ease: "fade",
 });
@@ -94,8 +93,7 @@ function blurStyle() {
   gsap.from(".modal", {
     opacity: 0,
     yPercent: -100,
-    // xPercent: 100,
-    // rotate: 256,
+
     duration: 2,
     ease: "back(3)",
   });
