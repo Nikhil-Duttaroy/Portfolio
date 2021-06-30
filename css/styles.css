@@ -58,6 +58,19 @@ h5 {
   font-size: 16px;
 }
 
+.typing{
+  overflow: hidden;
+  border-right: 1px solid red;
+  white-space: nowrap;
+  margin: 0;
+  letter-spacing: 2px;
+  animation: typing 3.5s steps(40,end),
+  blink-caret.75s step-end infinite;
+}
+@keyframes typing{
+  from{width: 0} to {width: 100%}
+}
+
 .S1 {
   background-color: var(--primaryColor);
   width: 100%;
@@ -307,10 +320,8 @@ header {
 }
 
 .SL:hover{
- 
   z-index: 15;
   box-shadow: -2px 1px 2px var(--overlayColor);
-  
 }
 .no{
   display: none;
