@@ -382,7 +382,8 @@ flex-direction: column;
 }
 .cards{
   width: 250px;
-  height: 350px;
+  /* height: 350px; */
+  height: max-content; 
   background-color: var(--secondaryColor);
   padding: 15px;
   margin-top: 15px;
@@ -394,20 +395,32 @@ flex-direction: column;
   align-items: center;
 }
 
+.links{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+
 .visitMe {
   background-color: var(--borderColor);
   border-radius: 10px;
   color: var(--secondaryFontColor);
-  width: 150px;
+  width: max-content;
   text-align: center;
-  display: block;
-  margin: 0 auto;
-  margin-top: 20px;
-  padding: 5px;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
 }
 .visitMe:hover {
-  border: 2px solid var(--themeBorder);
+  /* border: 2px solid var(--themeBorder); */
+  color: var(--borderColor);
+  Background-color: var(--secondaryFontColor);
 }
+
+.stack_img{
+  width: 2.8rem;
+}
+
 
 @media screen and (max-width: 800px) {
   .Projects{
